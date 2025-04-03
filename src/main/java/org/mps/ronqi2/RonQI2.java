@@ -1,6 +1,6 @@
 package org.mps.ronqi2;
 
-import org.mps.dispositivo.Dispositivo;
+import org.mps.dispositivo.*;
 
 public abstract class RonQI2 {
     protected Dispositivo disp;
@@ -9,14 +9,14 @@ public abstract class RonQI2 {
      * Inicializa el sistema ronQI2 configurando los dos sensores del dispositivo conectado.
     */
     public boolean inicializar(){
-        boolean result = false;
-        if (disp.conectarSensorPresion()){
-            boolean confPresion = disp.configurarSensorPresion();
-            if (disp.conectarSensorSonido()){
-                result = disp.configurarSensorSonido() && confPresion;
+        boolean result = false; 
+        if (disp.conectarSensorPresion()){ 
+            boolean confPresion = disp.configurarSensorPresion(); 
+            if (disp.conectarSensorSonido()){ 
+                result = disp.configurarSensorSonido() && confPresion; 
             }
         }
-        return result;   
+        return result; 
     }
 
     /* 
