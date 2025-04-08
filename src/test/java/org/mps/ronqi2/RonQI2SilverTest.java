@@ -11,7 +11,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mps.dispositivo.*;
 
-public class ronQI2Silvertest {
+public class RonQI2SilverTest {
 
     private RonQI2Silver ron;
 
